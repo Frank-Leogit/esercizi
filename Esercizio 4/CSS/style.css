@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+}
+
+header {
+  height: 70px;
+
+img {
+  width: 5%;
+}
+
+h1 {
+  position: relative;
+  display: inline;
+  bottom: 20px;
+}
+main {
+  background-color: gainsboro;
+  text-align: left;
+}
+
+div {
+  padding: 10px 0 14px 10px;
+  background-color: white;
+  margin: 0px 20% 0px 20%;
+  border-top: 30px solid gainsboro;
+  border-bottom: 30px solid gainsboro;
+
+}
+button{
+  font-size: 11px;
+  width: 10%;
+  height: 30px;
+  border-radius: 5px;
+}
+.task{
+  background-color: blue;
+  color: white;
+  border-color: blue;
+  border: 1px;
+}
+.section{
+  display: inline;
+  color: #ccc;
+  border-color: #ccc;
+  background-color: white;
+}
+
+section {
+  margin-top: 20px;
+}
+.red{
+  padding: 3px;
+  border: 1px solid crimson;
+  border-radius: 50%;
+  font-size: 15px;
+  color: crimson;
+  display: inline;
+}
+.green{
+  display: inline;
+  padding: 3px;
+  border: 1px solid forestgreen;
+  border-radius: 50%;
+  font-size: 15px;
+  color: forestgreen;
+}
+p{
+  padding-top: 15px;
+}
+span{
+  margin-right: 5px;
+}
+.tile{
+  font-size: 11px;
+  width: 10%;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
+  color: white;
+}
+.editorial{
+  background-color: blue;
+}
+.q1{
+  background-color: blueviolet;
+}
+.recruit{
+  background-color: mediumaquamarine;
+}
+.mobile{
+  background-color: orange;
+}
+.webs{
+  background-color: lightcoral;
+}
+.sales{
+  background-color: yellowgreen;
+}

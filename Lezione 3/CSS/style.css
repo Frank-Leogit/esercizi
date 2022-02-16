@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-image: url(pattern.jpg);
+  height: 100px;
+  padding: 0 10%;
+  background-size: 30%;
+}
+#logo{
+  margin-top: 20px;
+  width: 70px;
+  height: auto;
+}
+main{
+  margin: 20px 10%;
+}
+h1{
+  font-size: 28px;
+}
+h6{
+  font-size: 16px;
+  font-weight: bold;
+  color: #708090;
+  margin-bottom: 10px;
+}
+h6 a{
+  color: lightblue;
+}
+.data{
+  font-size: 12px;
+  font-weight: normal;
+}
+.paragrafo{
+  margin-top: 20px;
+}
+.didascalia{
+  font-size: 12px;
+  color: #708090;
+}
+
+td {
+  height: auto;
+}
+table{
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+.cellaintestazione{
+  border: 1px solid black;
+  text-align: left;
+  }
+.celledispari{
+background-color: black;
+color: white;
+}
+.ultimoelemento{
+  width: 50%;
+}
+ul{
+  margin: 20px;
+}
+#advise{
+  margin: 20px 10%;
+  margin-top: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #708090;
+}
+font{
+  font-family:
+}
