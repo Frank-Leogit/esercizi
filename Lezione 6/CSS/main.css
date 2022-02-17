@@ -21,6 +21,10 @@ a{
 a:hover {
   background-color: #999;
 }
+input:focus {
+  background-color: red;
+  
+}
 
 input{
   padding: 20px;
