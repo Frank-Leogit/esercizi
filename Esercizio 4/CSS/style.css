@@ -9,13 +9,15 @@ header {
 }
 
 img {
-  width: 5%;
+  margin: 15px 0;
+  width: 3%;
+  vertical-align: middle;
 }
 
 h1 {
-  position: relative;
+  margin: 15px 0;
+  vertical-align: middle;
   display: inline;
-  bottom: 20px;
 }
 main {
   background-color: gainsboro;
