@@ -9,15 +9,11 @@ body{
   padding-bottom: 20px;
 }
 
-@font-face {
-  font-family: PLAYSIR;
-  src:url("../font/PLAYSIR Regular.otf");
-}
 h1{
   font-size: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
-  font-family: "PLAYSIR", sans-serif;
+  font-family: 'Nerko One';
   color: white;
 }
 .card{
@@ -88,6 +84,10 @@ span{
 }
 div.card:hover span{
   color: violet;
-  font-size: 15px;
-  font-family: "PLAYSIR", sans-serif;
+  font-size: 25px;
+  font-family: 'Nerko One';
+}
+#open div.card{
+  visibility: visible;
+
 }
