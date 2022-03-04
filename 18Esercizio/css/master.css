@@ -1,0 +1,429 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  box-sizing: border-box;
+}
+.rule{
+  font-family: 'Open Sans', sans-serif;
+  color: #091e36;
+}
+.bar{
+  width: 100%;
+  height: 70px;
+  padding: 0 10% 0;
+}
+.up{
+  background-color: #eaf9fd;
+  border-bottom: solid 2px black;
+}
+.bar *{
+  display: inline;
+  margin: 23px 0 0 0;
+}
+.bar ul{
+  float: right;
+  margin-top: 0px;
+  list-style-type: none;
+}
+.bar li{
+  margin-right: 15px;
+}
+.bar li a{
+  text-decoration: none;
+  color: #091e36;
+}
+.bar li:hover{
+  text-decoration: underline;
+}
+.bar li:last-child{
+  margin-right: 0;
+}
+.up span{
+  margin: 23px 10px 0 10px;
+}
+.login{
+  padding: 7px;
+  color: #ff7300;
+  background-color: white;
+  border: solid 1px #ff7300;
+  border-radius: 4px;
+}
+.gethubspot{
+  padding: 7px;
+  background-color: #ff7300;
+  color: white;
+  border-radius: 4px;
+  display: inline-block;
+
+}
+.bar.down{
+  background-color: white;
+  border-bottom: solid 1px black;
+}
+nav{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.down img{
+  width: 120px;
+  height: auto;
+  margin-top: 15px;
+}
+.jumbotron{
+  width: auto;
+  height: 695px;
+  background-image: url(../img/jumbotron.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: solid 2px black;
+  margin-top: 140px;
+}
+.jumbotron *{
+  margin: 0 40% 0 10%;
+  display: inline-block;
+}
+.jumbotron h1{
+font-weight: 700;
+font-size: 50px;
+margin-top: 100px;
+margin-bottom: 30px;
+}
+.jumbotron span{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.jumbotron a{
+  margin:0;
+  padding: 20px;
+  text-decoration: none;
+  color: #091e36;
+}
+.small{
+  font-size: 12px;
+}
+.section{
+  height: auto;
+  background-color: #eaf9fd;
+}
+.paragraph{
+  padding: 10px 10% 10px;
+  text-align: center;
+}
+.paragraph h2{
+  font-size: 30px;
+}
+.free{
+  margin: 30px 10% 30px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 3px;
+}
+.container::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.row{
+  float: left;
+  width: 25%;
+  margin: 0 5% 0;
+  text-align: center;
+}
+.text{
+  float: left;
+  width: 60%;
+  margin-right: 5%;
+  text-align: left;
+}
+.row,.text *{
+  display: inline-block;
+
+}
+.row p{
+  padding:20px;
+}
+.line{
+  margin-left: 20px;
+  height: 1px;
+  width: 200px;
+  background-color: black;
+  vertical-align: middle;
+}
+.text p{
+  margin: 20px 0 20px;
+  font-size: 15px;
+}
+.text i{
+  color: #ff7300;
+}
+.subtext *{
+  margin-left: 20px;
+}
+.full{
+  margin: 0 10% 0;
+  height: auto;,
+  background-color:#eaf9fd;
+  padding-bottom: 30px;
+}
+.row3{
+  float: left;
+  width: 30%;
+  text-align: center;
+  background-color: white;
+  padding-bottom: 10px;
+}
+.row3:nth-child(2){
+  margin: 0 5% 0
+}
+.row3 img{
+  width: auto;
+  height: 100px;
+  display: block;
+  margin: 0 auto 10px;
+}
+.row3 *{
+  display: inline-block;
+  margin: 0 4% 0;
+}
+.row3 h3{
+  margin-bottom: 20px;
+}
+.row3 p{
+display: block;
+text-align: left;
+margin-right: 5px;
+}
+.row3 h4{
+display: block;
+margin-bottom: 15px;
+}
+.row3 i{
+  color: #ff7300;
+  text-align: left;
+}
+.row3 span{
+  margin-top: 20px;
+  padding: 15px;
+  width: 50%;
+}
+.row3 a{
+  text-decoration: none;
+  color: #091e36;
+}
+.blu{
+  width: 100%;
+  height: auto;
+  background: linear-gradient(45deg, #00918e,#00ced0);
+  padding: 0 10% 0;
+}
+.blu p,.blu h2{
+  padding-top: 30px;
+  color: white;
+  text-align: center;
+}
+.table{
+  padding: 20px 10% 0;
+}
+.row2{
+  float: left;
+  width: 25%;
+  margin: 30px 0 30px;
+}
+.row2 p, .row2 h3{
+  display: inline;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.row2 h3{
+  font-size: 35px;
+}
+.row2 span{
+  display: block;
+  font-size: 12px;
+  color: white;
+}
+.row2 img{
+  display: block;
+  margin: 0 auto 0;
+}
+.bottomleft{
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+.upleft{
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+.upmid{
+  text-align: center;
+  padding: 10px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+.bottomright{
+  text-align: center;
+  padding: 10px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.upright{
+  text-align: center;
+  padding: 10px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.bottommid{
+  text-align: center;
+  padding: 10px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+.female{
+  margin: 30px 0 30px 0;
+}
+.row4{
+  float: left;
+  width:50%;
+  text-align: center;
+}
+.row4 h2{
+  margin: 20px 0 20px 0;
+  font-size: 30px;
+}
+.row4 p{
+  width: 30%;
+  margin: 0 auto 0;
+}
+.griglia{
+  width: 40%;
+  float: left;
+  margin-right: 10%;
+}
+.griglia img{
+  height: 40px;
+  width: 100%;
+  margin: auto;
+  display: inline-block;
+  padding: 5px;
+}
+.griglia.row2{
+  width: 20%;
+}
+.grow{
+  padding-left: 10%;
+  padding-top: 60px;;
+  float: left;
+  width: 50%;
+}
+.imgfemale{
+  float: left;
+  width: 50%;
+}
+.imgfemale img{
+  width: 50%;
+  height: auto;
+  margin: 0 10% 0;
+}
+.grow h2{
+  font-size: 30px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.grow .gethubspot{
+  margin: 10px 0 10px 0;
+}
+.grow span{
+  font-size: 12px;
+  display: block;
+}
+.footie{
+  padding: 20px 10% 80px;
+  background-color: #091e36;
+  color: white;
+  text-align: center;
+  position: relative;
+
+}
+.row5{
+  float: left;
+  width: 25%;
+  text-align: left;
+}
+.row5 p{
+  font-size: 12px;
+  color: gainsboro;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.row5 i{
+  display: inline-block;
+  margin: 0 5% 0;
+}
+.row5:last-child p:last-child{
+  margin-top: 0;
+}
+.title{
+  font-weight: 700;
+  color: white;
+}
+.footie .gethubspot{
+  background-color: white;
+  color: #091e36;
+  text-align: center;
+  padding: 6px;
+  display: inline-block;
+}
+.language{
+  margin: 20px 0 20px 0;
+}
+.language p{
+  display: inline-block;
+}
+.packleft{
+  float: left;
+  width: 30%;
+}
+.packleft img{
+  float: left;
+  width: 50%;
+}
+.packleft span{
+  float: left;
+}
+.subfooter p{
+  float: right;
+  display: inline-block;
+  margin-left: 5px;
+}
+.footie a{
+  text-decoration: none;
+  color: inherit;
+}
+.help{
+    min-width: 7%;
+    min-height: 90px;
+    border: 2px solid white;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 100%;
+    background-color: #ff7300;
+    padding: 30px;
+}
+.help i{
+  width: 30px;
+  font-size: 30px;
+  color: white;
+}
