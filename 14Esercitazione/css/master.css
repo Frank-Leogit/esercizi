@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 0; */
+  box-sizing: border-box;
+}
+header {
+  /* debug */
+  background-color: yellow;
+  height: 150px;
+}
+/* regole main */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.aside {
+  float: left;
+  width: 40%;
+  background-color: pink;
+  height: 100px;
+
+}
+.section {
+  float: right;
+  width: 50%;
+  background-color: purple;
+  height: 200px;
+}
+footer {
+  /* debug */
+  background-color: lightblue;
+  height: 70px;
+}
