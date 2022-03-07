@@ -1,0 +1,17 @@
+[class*="col-"]
+{
+  min-height:100px;
+  background-color: pink;
+  border: 1px solid black;
+  text-align: center;
+}
+[class*="col-"] p{
+  margin: 40px 30% 0;
+}
+[class*="col-"] [class*="col-"]{
+  border: 1px solid white;
+  background-color: red;
+}
+[class*="col-"] .row{
+  margin: 3px;
+}
