@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Javascript test</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <h1 id="mainTitle">Hello World</h1>  
+        </div>
+    </div>
+   <script> 
+        // live1
+        // var nomeUtente = prompt('Dimmi il tuo nome e ti dirò chi sei');
+        // document.getElementById("mainTitle").innerhtml = 'Hello ' + nomeUtente;
+        // console.log(nomeUtente);
+        // live2
+        var year = 2021;
+        var birthYearStr = prompt('Quando sei nato');
+        var birthYearNumber = parseInt(birthYearStr);
+        var diff = year - birthYearStr;
+        console.log(year, birthYearStr, diff, birthYearNumber);
+        document.getElementById('mainTitle').innerHTML = "Allora hai " + diff + " anni";
+   </script>
+</body>
+</html>
