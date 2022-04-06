@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #ccc;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.square{
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square.second{
+    flex-grow: 1;
+    background-color: blue;
+}
+.square.third{
+    flex-grow: 2;
+    background-color: blueviolet;
+}
+.square.first{
+    flex-shrink: 2;
+    background-color: chartreuse;
+}
