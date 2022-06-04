@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.row{
+    width: 50%;
+    height: 20vh;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-blue{
+    background-color: blue;
+}
+#target{
+    display: flex;
+}
+.box{
+    width: 50px;
+    height: 50px;
+}
+#mail-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

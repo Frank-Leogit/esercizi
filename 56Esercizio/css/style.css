@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+    color: white;
+    flex-direction: row;
+}
+.container > *{
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}

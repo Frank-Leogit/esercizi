@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+    color: white;
+    flex-direction: column;
+}
+.container > *{
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: darkslategray;
+    margin: 10px;
+}
+.box span{
+    margin: auto;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}

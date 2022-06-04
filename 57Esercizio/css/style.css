@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+}
+.container > *{
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 15px;
+    height: 15px;
+    display: flex;
+}
+.bg-green{
+    background-color: green;
+}
+.bg-red{
+    background-color: red;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Biglietto Treno Megapro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2>Calcola il prezzo del tuo biglietto</h2>
+            <div>
+                <div>
+                    <label for="name">Nome e Cognome</label>
+                    <input id="name" type="text" name="name" value="">
+                </div>
+                <div>
+                    <label for="number">Km da percorrere</label>
+                    <input type="number" id="distance" name="distance" value="">
+                    </select>
+                </div>
+                <div>
+                    <label for="eta">Fascia d'età</label>
+                    <select name="eta" id="eta">
+                        <option selected value="">seleziona un'opzione</option>
+                        <option value="1">minorenne</option>
+                        <option value="2">maggiorenne</option>
+                        <option value="3">over 65</option>
+                    </select>
+                </div>
+                <div>
+                    <input id="genera" type="button" value="Genera">
+                    <input id="annulla" type="button" value="Annulla">                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2>Il tuo biglietto</h2>
+            <div>
+                <p>Dettaglio Passeggeri</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome Passeggero</th>
+                            <th>Offerta</th>
+                            <th>Carrozza</th>
+                            <th>Codice CP</th>
+                            <th>Costo biglietto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id=""></td>
+                            <td id=""></td>
+                            <td id=""></td>
+                            <td id="codice"></td>
+                            <td id="costo-totale"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

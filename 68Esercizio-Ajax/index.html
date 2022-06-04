@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="row">
+            
+                
+            </div>
+        </div> -->
+    <!-- </div> -->
+    <div id="app" class="container">
+        <div class="row">
+            <div id="select">
+                <label for="genre">Choose a genre</label>
+                <select v-model="selectedGenre" @click="filteredItems" name="genre" id="genre">
+                    <option value=""> All </option>
+                    <option value="Rock">rock </option>
+                    <option value="Pop">pop</option>
+                    <option value="Jazz">jazz</option>
+                    <option value="Metal">metal</option>
+                </select>
+            </div>
+            <div v-for="disk in filteredItems()" class="box">
+                <div>
+            {{disk.author}}
+                </div>
+                <div>
+            {{disk.genre}}
+                </div>
+                <img :src="disk.poster" alt="" width="50px" height="50px">
+                <div>
+            {{disk.title}}
+                </div>
+                <div>
+            {{disk.year}}
+                </div>
+            </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

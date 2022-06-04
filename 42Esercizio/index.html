@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Create your burger</h1>
+            <div class="row">
+            </div>
+        </header>
+        <main>
+            <input id="burger-name" name="burger-name" type="text" placeholder="Nome del panino">
+            <h2>Ingredients</h2>
+            <ul>
+<!-- Le classi dei li servono per essere richiamate dal get element 
+e poi ciclate controllando se le checkbox siano spuntate o meno -->
+                <li>
+                    <input type="checkbox" class="ingred" id="formaggio" data-price="2">
+                    Formaggio
+                </li>
+                <li>
+                    <input type="checkbox" class="ingred" id="uova" data-price="3">
+                    Uovo
+                </li>
+                <li>
+                    <input type="checkbox" class="ingred" id="mostarda" data-price="4">
+                    Mostarda
+                </li>
+                <li>
+                    <input type="checkbox" class="ingred" id="pomodoro" data-price="1">
+                    Pomodoro
+                </li>
+                <li>
+                    <input type="checkbox" class="ingred" id="lattuga" data-price="6">
+                    Lattuga
+                </li>
+                <li>
+                    <input type="checkbox" class="ingred" id="ketchup" data-price="1">
+                    ketchup
+                </li>
+            </ul>
+            <div>
+Coupon
+                <label for="coupon">Discount Coupon</label>
+                <input id="burger-coupon" name="coupon" type="text" placeholder="Coupon">
+            </div>
+            <button id="calculate">Calcola Prezzo</button>
+        </main>
+        <footer>
+            <span>Prezzo</span>
+            <span>€<span id="price"></span></span>
+            
+        </footer>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

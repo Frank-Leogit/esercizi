@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="app" class="container">
+        <div class="slider-wrapper">
+            <div class="prev">
+                <i class="fas fa-angle-left" @click="prevImg"></i>
+            </div>
+            <div class="images">
+                <img :src="imgs[activeIndex]" alt="">
+            </div>
+            <div class="next">
+                <i class="fas fa-angle-right" @click="nextImg"></i>
+            </div>
+            <div class="nav">
+                <i v-for="index in imgs.length" :class="index-1 == activeIndex ? 'active' : '' " class="fas fa-circle"></i>  
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
