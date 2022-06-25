@@ -1,0 +1,549 @@
+@import "Partials/variables";
+@import "Partials/common";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $my-font;
+}
+
+body {
+    header {
+        padding: 0 10%;
+        background-color: $background-color-primary;
+        color: $color-primary;
+
+        .information {
+            height: 40px;
+            @include list-style-right;
+
+            li {
+                margin: 9px;
+
+                a {
+                    color: grey;
+
+                    i {
+                        margin-right: 10px;
+                        color: rgb(47, 47, 254);
+                    }
+                }
+
+            }
+        }
+
+        .nav {
+            height: 45px;
+            width: 100%;
+            @include list-style-left;
+
+            img {
+                float: left;
+                margin: 0px 5%;
+            }
+
+            li {
+                height: 45px;
+                padding: 10px;
+
+                &:hover {
+                    background-color: $color-primary;
+
+                    a {
+                        color: $color-secondary;
+                    }
+                }
+
+                i {
+                    margin-left: 5px;
+                }
+
+                a {
+                    color: $color-primary;
+                }
+            }
+
+        }
+    }
+
+    main {
+        color: $color-primary;
+
+        .jumbotron {
+            &:after {
+                @include clearfix;
+
+
+            }
+
+            background-image: url("/sass-painter/src/img/hero-background.jpg");
+            background-repeat: no-repeat;
+            width: 100%;
+
+            .descript {
+                font-size: large;
+                width: 40%;
+                float: right;
+                margin-top: 8%;
+
+                & * {
+                    margin: 5px 0;
+                }
+
+                @include list-style;
+
+                i {
+                    margin-right: 5px;
+                }
+
+
+                .trial {
+                    background: rgba(75, 75, 75, 1);
+                    width: 210px;
+
+                    p {
+                        width: 155px;
+                        font-size: 14px;
+                        padding: 10px;
+                        border-right: 1px solid white;
+                    }
+
+                    i {
+                        float: right;
+                        margin: 15px 15px 0 0;
+                        font-size: 24px;
+
+                    }
+                }
+
+            }
+
+            .pay {
+                background-color: rgba(0, 0, 0, 0.75);
+                width: 40%;
+                padding: 4% 5%;
+                float: right;
+                margin: 4% 4% 0 0;
+
+                & * {
+                    margin: 2% 0;
+                }
+
+                h2 {
+                    display: inline-block;
+                }
+
+                img {
+                    float: right;
+                }
+
+                button {
+                    background-color: blue;
+                    color: $color-primary;
+                    width: 35%;
+                    height: 30px;
+                    border: none;
+
+                    &:focus {
+                        border: none;
+                        outline: none;
+                    }
+                }
+
+                .limited {
+                    background-color: $color-primary;
+                    color: $color-secondary;
+                    padding: 5%;
+
+                    & * {
+                        margin: 2px 0;
+                    }
+                }
+
+
+            }
+        }
+
+        .small-menu {
+            padding: 0 10%;
+            background-color: rgb(230, 230, 230);
+            @include list-style-left;
+            height: 50px;
+
+            li {
+                height: 50px;
+
+                &:first-of-type {
+                    background-color: rgb(250, 250, 250);
+                    border-bottom: 4px solid black;
+                }
+
+                padding: 1%;
+
+                &:hover {
+                    background-color: rgb(245, 245, 245);
+                    ;
+                }
+
+                a {
+                    color: $color-secondary;
+                }
+            }
+
+        }
+
+        .jumbotron2 {
+            &:after {
+                @include clearfix;
+
+
+            }
+
+            padding: 100px 10% 0 10%;
+            text-align: center;
+            background-image: url('/sass-painter/src/img/overview-bg.jpg');
+            background-repeat: no-repeat;
+
+            .overview {
+                height: 599px;
+                position: relative;
+
+                h3 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 20px;
+                    margin: 30px 0;
+                }
+
+                img {
+                    width: 800px;
+                    height: 400px;
+                    position: absolute;
+                    bottom: 0;
+                    left: calc(50% - 400px);
+                }
+            }
+        }
+
+        .slider {
+            background-color: $color-primary;
+            color: $color-secondary;
+            text-align: center;
+            position: relative;
+            height: 800px;
+            padding: 3% 10% 3% 10%;
+
+            h3 {
+                font-size: 30px;
+            }
+
+            p {
+                margin: 5% 0;
+                font-size: 20px;
+            }
+
+            img {
+                height: 450px;
+                width: 800px;
+            }
+        }
+
+        .blank {
+            width: 100%;
+            height: 800px;
+            opacity: 0;
+        }
+
+        .underground {
+            background-image: url("/sass-painter/src/img/image-bg-01.jpg");
+            background-attachment: fixed;
+            width: 100vw;
+            height: 70vh;
+            background-position: center;
+        }
+
+        .specs {
+            padding: 5% 10%;
+            background-color: rgba(34, 34, 34, 1);
+            text-align: center;
+
+            h3 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 25px;
+                margin: 5% 0;
+            }
+
+            .container {
+                width: 100%;
+
+                h3 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 20px;
+                    margin: 5% 0;
+                }
+            }
+
+            .container:after {
+                @include clearfix;
+
+
+            }
+
+            .row {
+                float: left;
+                width: 40%;
+                margin: auto 5%;
+                padding: 5%;
+            }
+
+            .row-img {
+                float: left;
+                width: 50%;
+                padding: 3%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+
+        }
+
+        .new-underground {
+            background-image: url("/sass-painter/src/img/image-bg-02.jpg");
+            background-attachment: fixed;
+            width: 100vw;
+            height: 70vh;
+            background-position: center;
+        }
+
+        .tools {
+            padding: 3% 0;
+            background-color: $color-primary;
+            color: $color-secondary;
+            text-align: center;
+
+            .image {
+                width: 273px;
+                height: 273px;
+                margin: 0 1%;
+                float: left;
+                background-position: center;
+                background-size: cover;
+                background-size: 100% 100%;
+                transition: background-size 0.3s ease-out;
+                // -moz-transition: background-size 0.3s ease-out;
+                // -web-kit-transition: background-size 0.3s ease-out;
+            }
+
+            .image:hover {
+                background-size: 130% 130%;
+            }
+
+            #one {
+                background-image: url("/sass-painter/src/img/card-1.jpg");
+            }
+
+            #two {
+                background-image: url("/sass-painter/src/img/card-2.jpg");
+            }
+
+            #three {
+                background-image: url("/sass-painter/src/img/card-3.jpg");
+            }
+
+            #four {
+                background-image: url("/sass-painter/src/img/card-4.jpg");
+            }
+
+            #five {
+                background-image: url("/sass-painter/src/img/card-5.jpg");
+            }
+
+            h3 {
+                margin: 5% 0;
+                font-size: 50px;
+            }
+
+            &:after {
+                @include clearfix;
+            }
+
+        }
+
+        .end {
+            padding: 5% 10%;
+            background-image: url("/sass-painter/src/img/brushpacks-bg.jpg");
+
+            &:after {
+                @include clearfix;
+
+
+            }
+
+            .section {
+                margin: 0 2.5%;
+                padding: 10% 5%;
+                width: 45%;
+                float: left;
+                background-color: $color-primary;
+                color: $color-secondary;
+                text-align: center;
+
+                h4 {
+                    font-size: 25px;
+                }
+
+                p {
+                    margin-top: 10px;
+                    font-size: 15px;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    footer {
+        .container {
+            background-color: $color-primary;
+            padding: 3% 10%;
+
+            &:after {
+                @include clearfix;
+            }
+
+            .row {
+                .col-3 {
+                    width: 15%;
+                    float: left;
+                    margin: 0 5%;
+                    @include list-style;
+
+                    li {
+                        font-size: 12px;
+                        margin: 3%;
+
+                        a {
+                            color: $color-secondary;
+                        }
+
+                        &:first-of-type {
+                            font-size: 18px;
+                            margin-bottom: 15%;
+                        }
+                    }
+
+                }
+            }
+
+            .socials {
+                float: right;
+                width: 40%;
+                @include list-style-right;
+
+                #insta {
+                    background-color: rgba(222, 5, 200, 0.75);
+                }
+
+                #fb {
+                    background-color: rgba(8, 29, 134, 0.75);
+                }
+
+                #twit {
+                    background-color: rgba(0, 204, 255, 0.75);
+                }
+
+                #yt {
+                    background-color: rgba(215, 2, 12, 0.75);
+                }
+
+                #pint {
+                    background-color: rgba(138, 0, 0, 0.75);
+                }
+
+                #rss {
+                    background-color: rgba(182, 109, 1, 0.75);
+                }
+
+                li {
+                    width: 30px;
+                    height: 30px;
+                    float: left;
+                    border-radius: 5px;
+                    margin: 5% 1%;
+                    text-align: center;
+
+                    a {
+                        margin-top: 1px;
+                        text-decoration: none;
+                        color: $color-primary;
+                        font-size: 20px;
+                    }
+                }
+
+            }
+        }
+
+        .partners {
+            padding: 2% 10%;
+            background-color: $background-color-primary;
+            height: 140px;
+
+            #img {
+                list-style-type: none;
+                float: left;
+                width: 40%;
+
+                li {
+                    float: left;
+                    margin: 2%;
+                }
+            }
+
+            #terms {
+                list-style-type: none;
+                float: right;
+                width: 60%;
+                margin-top: 35px;
+
+                li {
+                    font-size: 13px;
+                    margin: 0 1%;
+
+                    a {
+                        text-decoration: none;
+                        color: grey;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    &:first-of-type {
+                        color: $color-primary;
+                        margin-top: 1px;
+                    }
+
+                    float: right;
+                }
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import 'variables.scss';
+header{
+    @include sided;
+    background-color: $color-secondary;
+    ul{
+        list-style: none;
+        a{
+            text-decoration: none;
+            li{
+                @include list-item;
+            }
+        }
+    }
+}
+main{
+    background-color: $color-primary;
+    width: 70%;
+    float: left;
+}

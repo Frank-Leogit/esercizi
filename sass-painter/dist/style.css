@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body header {
+  padding: 0 10%;
+  background-color: black;
+  color: white;
+}
+body header .information {
+  height: 40px;
+}
+body header .information ul {
+  list-style-type: none;
+}
+body header .information ul li {
+  float: right;
+}
+body header .information ul li a {
+  text-decoration: none;
+}
+body header .information li {
+  margin: 9px;
+}
+body header .information li a {
+  color: grey;
+}
+body header .information li a i {
+  margin-right: 10px;
+  color: rgb(47, 47, 254);
+}
+body header .nav {
+  height: 45px;
+  width: 100%;
+}
+body header .nav ul {
+  list-style-type: none;
+}
+body header .nav ul li {
+  float: left;
+}
+body header .nav ul li a {
+  text-decoration: none;
+}
+body header .nav img {
+  float: left;
+  margin: 0px 5%;
+}
+body header .nav li {
+  height: 45px;
+  padding: 10px;
+}
+body header .nav li:hover {
+  background-color: white;
+}
+body header .nav li:hover a {
+  color: black;
+}
+body header .nav li i {
+  margin-left: 5px;
+}
+body header .nav li a {
+  color: white;
+}
+body main {
+  color: white;
+}
+body main .jumbotron {
+  background-image: url("/sass-painter/src/img/hero-background.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+body main .jumbotron:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body main .jumbotron .descript {
+  font-size: large;
+  width: 40%;
+  float: right;
+  margin-top: 8%;
+}
+body main .jumbotron .descript * {
+  margin: 5px 0;
+}
+body main .jumbotron .descript ul {
+  list-style-type: none;
+}
+body main .jumbotron .descript ul li a {
+  text-decoration: none;
+}
+body main .jumbotron .descript i {
+  margin-right: 5px;
+}
+body main .jumbotron .descript .trial {
+  background: rgb(75, 75, 75);
+  width: 210px;
+}
+body main .jumbotron .descript .trial p {
+  width: 155px;
+  font-size: 14px;
+  padding: 10px;
+  border-right: 1px solid white;
+}
+body main .jumbotron .descript .trial i {
+  float: right;
+  margin: 15px 15px 0 0;
+  font-size: 24px;
+}
+body main .jumbotron .pay {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 40%;
+  padding: 4% 5%;
+  float: right;
+  margin: 4% 4% 0 0;
+}
+body main .jumbotron .pay * {
+  margin: 2% 0;
+}
+body main .jumbotron .pay h2 {
+  display: inline-block;
+}
+body main .jumbotron .pay img {
+  float: right;
+}
+body main .jumbotron .pay button {
+  background-color: blue;
+  color: white;
+  width: 35%;
+  height: 30px;
+  border: none;
+}
+body main .jumbotron .pay button:focus {
+  border: none;
+  outline: none;
+}
+body main .jumbotron .pay .limited {
+  background-color: white;
+  color: black;
+  padding: 5%;
+}
+body main .jumbotron .pay .limited * {
+  margin: 2px 0;
+}
+body main .small-menu {
+  padding: 0 10%;
+  background-color: rgb(230, 230, 230);
+  height: 50px;
+}
+body main .small-menu ul {
+  list-style-type: none;
+}
+body main .small-menu ul li {
+  float: left;
+}
+body main .small-menu ul li a {
+  text-decoration: none;
+}
+body main .small-menu li {
+  height: 50px;
+  padding: 1%;
+}
+body main .small-menu li:first-of-type {
+  background-color: rgb(250, 250, 250);
+  border-bottom: 4px solid black;
+}
+body main .small-menu li:hover {
+  background-color: rgb(245, 245, 245);
+}
+body main .small-menu li a {
+  color: black;
+}
+body main .jumbotron2 {
+  padding: 100px 10% 0 10%;
+  text-align: center;
+  background-image: url("/sass-painter/src/img/overview-bg.jpg");
+  background-repeat: no-repeat;
+}
+body main .jumbotron2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body main .jumbotron2 .overview {
+  height: 599px;
+  position: relative;
+}
+body main .jumbotron2 .overview h3 {
+  font-size: 30px;
+}
+body main .jumbotron2 .overview p {
+  font-size: 20px;
+  margin: 30px 0;
+}
+body main .jumbotron2 .overview img {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 400px);
+}
+body main .slider {
+  background-color: white;
+  color: black;
+  text-align: center;
+  position: relative;
+  height: 800px;
+  padding: 3% 10% 3% 10%;
+}
+body main .slider h3 {
+  font-size: 30px;
+}
+body main .slider p {
+  margin: 5% 0;
+  font-size: 20px;
+}
+body main .slider img {
+  height: 450px;
+  width: 800px;
+}
+body main .blank {
+  width: 100%;
+  height: 800px;
+  opacity: 0;
+}
+body main .underground {
+  background-image: url("/sass-painter/src/img/image-bg-01.jpg");
+  background-attachment: fixed;
+  width: 100vw;
+  height: 70vh;
+  background-position: center;
+}
+body main .specs {
+  padding: 5% 10%;
+  background-color: rgb(34, 34, 34);
+  text-align: center;
+}
+body main .specs h3 {
+  font-size: 40px;
+}
+body main .specs p {
+  font-size: 25px;
+  margin: 5% 0;
+}
+body main .specs .container {
+  width: 100%;
+}
+body main .specs .container h3 {
+  font-size: 30px;
+}
+body main .specs .container p {
+  font-size: 20px;
+  margin: 5% 0;
+}
+body main .specs .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body main .specs .row {
+  float: left;
+  width: 40%;
+  margin: auto 5%;
+  padding: 5%;
+}
+body main .specs .row-img {
+  float: left;
+  width: 50%;
+  padding: 3%;
+}
+body main .specs .row-img img {
+  width: 100%;
+  height: 100%;
+}
+body main .new-underground {
+  background-image: url("/sass-painter/src/img/image-bg-02.jpg");
+  background-attachment: fixed;
+  width: 100vw;
+  height: 70vh;
+  background-position: center;
+}
+body main .tools {
+  padding: 3% 0;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+body main .tools .image {
+  width: 273px;
+  height: 273px;
+  margin: 0 1%;
+  float: left;
+  background-position: center;
+  background-size: cover;
+  background-size: 100% 100%;
+  transition: background-size 0.3s ease-out;
+}
+body main .tools .image:hover {
+  background-size: 130% 130%;
+}
+body main .tools #one {
+  background-image: url("/sass-painter/src/img/card-1.jpg");
+}
+body main .tools #two {
+  background-image: url("/sass-painter/src/img/card-2.jpg");
+}
+body main .tools #three {
+  background-image: url("/sass-painter/src/img/card-3.jpg");
+}
+body main .tools #four {
+  background-image: url("/sass-painter/src/img/card-4.jpg");
+}
+body main .tools #five {
+  background-image: url("/sass-painter/src/img/card-5.jpg");
+}
+body main .tools h3 {
+  margin: 5% 0;
+  font-size: 50px;
+}
+body main .tools:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body main .end {
+  padding: 5% 10%;
+  background-image: url("/sass-painter/src/img/brushpacks-bg.jpg");
+}
+body main .end:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body main .end .section {
+  margin: 0 2.5%;
+  padding: 10% 5%;
+  width: 45%;
+  float: left;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+body main .end .section h4 {
+  font-size: 25px;
+}
+body main .end .section p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+body main .end .section p a {
+  text-decoration: none;
+}
+body footer .container {
+  background-color: white;
+  padding: 3% 10%;
+}
+body footer .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body footer .container .row .col-3 {
+  width: 15%;
+  float: left;
+  margin: 0 5%;
+}
+body footer .container .row .col-3 ul {
+  list-style-type: none;
+}
+body footer .container .row .col-3 ul li a {
+  text-decoration: none;
+}
+body footer .container .row .col-3 li {
+  font-size: 12px;
+  margin: 3%;
+}
+body footer .container .row .col-3 li a {
+  color: black;
+}
+body footer .container .row .col-3 li:first-of-type {
+  font-size: 18px;
+  margin-bottom: 15%;
+}
+body footer .container .socials {
+  float: right;
+  width: 40%;
+}
+body footer .container .socials ul {
+  list-style-type: none;
+}
+body footer .container .socials ul li {
+  float: right;
+}
+body footer .container .socials ul li a {
+  text-decoration: none;
+}
+body footer .container .socials #insta {
+  background-color: rgba(222, 5, 200, 0.75);
+}
+body footer .container .socials #fb {
+  background-color: rgba(8, 29, 134, 0.75);
+}
+body footer .container .socials #twit {
+  background-color: rgba(0, 204, 255, 0.75);
+}
+body footer .container .socials #yt {
+  background-color: rgba(215, 2, 12, 0.75);
+}
+body footer .container .socials #pint {
+  background-color: rgba(138, 0, 0, 0.75);
+}
+body footer .container .socials #rss {
+  background-color: rgba(182, 109, 1, 0.75);
+}
+body footer .container .socials li {
+  width: 30px;
+  height: 30px;
+  float: left;
+  border-radius: 5px;
+  margin: 5% 1%;
+  text-align: center;
+}
+body footer .container .socials li a {
+  margin-top: 1px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+body footer .partners {
+  padding: 2% 10%;
+  background-color: black;
+  height: 140px;
+}
+body footer .partners #img {
+  list-style-type: none;
+  float: left;
+  width: 40%;
+}
+body footer .partners #img li {
+  float: left;
+  margin: 2%;
+}
+body footer .partners #terms {
+  list-style-type: none;
+  float: right;
+  width: 60%;
+  margin-top: 35px;
+}
+body footer .partners #terms li {
+  font-size: 13px;
+  margin: 0 1%;
+  float: right;
+}
+body footer .partners #terms li a {
+  text-decoration: none;
+  color: grey;
+}
+body footer .partners #terms li a:hover {
+  text-decoration: underline;
+}
+body footer .partners #terms li:first-of-type {
+  color: white;
+  margin-top: 1px;
+}

@@ -1,0 +1,32 @@
+header {
+  width: 30%;
+  float: left;
+  background-color: green;
+}
+header ul {
+  list-style: none;
+}
+header ul a {
+  text-decoration: none;
+}
+header ul a li {
+  text-align: center;
+  width: 50%;
+  size: 2em;
+  color: red;
+}
+header ul a li:hover {
+  color: green;
+  background-color: aqua;
+}
+
+main {
+  background-color: red;
+  width: 70%;
+  float: left;
+}
+
+body {
+  margin: 0;
+  background-color: aqua;
+}

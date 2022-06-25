@@ -1,0 +1,85 @@
+@import "Partials/variables";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+.container-fluid{
+    width: 100%;
+}
+nav{
+    padding-top: 40px;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    .navbar-brand{
+        height: 80%;
+        img{
+            height: 80%;
+
+        }
+    }
+    ul{
+        width: 60%;
+        display: flex;
+        justify-content:center;
+        list-style-type: none;
+        li{
+            width: calc(100% / 7);
+            display: flex;
+            align-items: center;
+            &:last-of-type{
+                justify-content: center;
+                }
+            a{
+                width: 100%;
+                font-weight: bold;
+                text-decoration: none;
+                text-align: center;
+                color: black;
+            }
+            span{
+                text-align: center;
+                width: 100%;
+                font-weight: bold;
+                position: relative;
+                ul{
+                    width: 120%;
+                    position: absolute;
+                    top: 30px;
+                    left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    list-style-type: none;
+                    z-index: 100;
+                    animation: growDown 300ms ease-in-out forwards;
+                    transform-origin: top center;  
+                    background-color: $color-primary; 
+                }                 
+                li{
+                    width: 100%;
+                    padding: 5%;
+                        
+                        a{
+                            text-align: start;
+                            text-decoration: none;
+                            color: grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(0.8)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}

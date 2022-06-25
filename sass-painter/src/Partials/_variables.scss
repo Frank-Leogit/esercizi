@@ -1,0 +1,42 @@
+$color-primary: white;
+$color-secondary: black;
+$background-color-primary: black;
+$my-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@mixin clearfix {
+    content:'';
+    display: table;
+    clear: both;
+    
+}
+@mixin list-style{
+    ul{
+        list-style-type: none;
+        li{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+@mixin list-style-right{
+    ul{
+        list-style-type: none;
+        li{
+            float: right;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+@mixin list-style-left{
+    ul{
+        list-style-type: none;
+        li{
+            float: left;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}

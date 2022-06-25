@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div id="app" class="container-fluid">
+
+        <header>
+            <nav class="navbar">
+                <a href="#" class="navbar-brand ms-5">
+                    <img src="/maree-vue-sass/src/img/logo-sidearea-1.png" alt="">
+                </a>
+                <ul class="navbar-nav">
+                    <li @mouseleave="mouseLeave" v-for="(item,index) in header">
+                        <a v-if="!item.dropdown" href="item.url">{{ item.name }}</a>
+                        <span :class="index == activeIndex? 'active': ''" v-else  @mouseover="mouseOver(index)">{{ item.name }}
+                            <ul v-if="isOpen && index == activeIndex" class="dropdown">
+                                <li v-for="elem in header[activeIndex].dropdown"><a href="#">{{ elem.name }}</a></li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li><img src="/maree-vue-sass/src/svg/svg-1.svg" alt=""></li>
+                </ul>
+
+            </nav>
+
+        </header>
+        <main>
+
+        </main>
+        <footer>
+            <div class="container-fluid">
+                <div class="row p-3">
+                    <ul class="list-unstyled">
+                        <li><a href=""><img :src="footerLogo" alt=""></a></li>
+                        <li v-for="foot in footer">{{ foot.name }}</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
