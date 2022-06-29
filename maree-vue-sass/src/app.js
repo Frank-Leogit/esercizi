@@ -4,6 +4,7 @@ function initVue() {
         data: {
             isOpen: false,
             activeIndex: '0',
+            line: '',
             header: [
                 {
                     url: '#home',
@@ -206,20 +207,64 @@ function initVue() {
             ],
             footerLogo: "/maree-vue-sass/src/img/logo-sidearea-1-1.png",
             social: [
-
+             {
+                socialName: 'fa-pinterest-p'
+            },
+             {
+                socialName: 'fa-facebook-f'
+            },
+             {
+                socialName: 'fa-twitter'
+            },
+             {
+                socialName: 'fa-linkedin-in'
+            }
+            ],
+            images: [
+                {
+                    src: "/maree-vue-sass/src/img/short-slider-rev-1-img-3.png"
+                },
+                {
+                    src: "/maree-vue-sass/src/img/short-slider-rev-1-img-1.png"
+                },
+                {
+                    src: "/maree-vue-sass/src/img/short-slider-rev-1-img-2.png"
+                },
+                {
+                    src: "/maree-vue-sass/src/img/short-slider-rev-1-img-4.png"
+                },
+                {
+                    src: "/maree-vue-sass/src/img/short-slider-rev-1-img-5.png"
+                },
+                {
+                    src: "/maree-vue-sass/src/img/short-slider-rev-1-img-6.png"
+                },
+                {
+                    src: "/maree-vue-sass/src/img/short-slider-rev-1-img-7.png"
+                },
+                {
+                    src: "/maree-vue-sass/src/img/short-slider-rev-1-img-8.png"
+                },
+                {
+                    src: "/maree-vue-sass/src/img/short-slider-rev-1-img-9.png"
+                },
+                {
+                    src: "/maree-vue-sass/src/img/short-slider-rev-1-img-10.png"
+                },
             ]
-
         },
         methods: {
             mouseOver: function (index) {
                 this.isOpen = true
                 this.activeIndex = index;
+                this.line = "text-line";
 
 
             },
             mouseLeave: function () {
                 this.isOpen = false;
                 this.activeIndex = "0";
+                this.line = "";
             },
         }
     })

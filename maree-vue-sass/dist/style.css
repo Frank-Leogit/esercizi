@@ -2,7 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Muli", sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+.text-line {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  width: 200%;
+  height: 7px;
+  background-color: #f0cebe;
+  opacity: 0.7;
+  z-index: -1;
 }
 
 .container-fluid {
@@ -10,10 +21,10 @@
 }
 
 nav {
-  padding-top: 40px;
+  padding: 40px 5% 0;
   height: 90px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 nav .navbar-brand {
   height: 80%;
@@ -32,6 +43,9 @@ nav ul li {
   display: flex;
   align-items: center;
 }
+nav ul li:first-of-type .text-line {
+  width: 100%;
+}
 nav ul li:last-of-type {
   justify-content: center;
 }
@@ -43,13 +57,13 @@ nav ul li a {
   color: black;
 }
 nav ul li span {
-  text-align: center;
   width: 100%;
+  text-align: center;
   font-weight: bold;
   position: relative;
 }
 nav ul li span ul {
-  width: 120%;
+  width: 170%;
   position: absolute;
   top: 30px;
   left: 0;
@@ -95,4 +109,141 @@ nav ul li span li a {
   100% {
     transform: scaleY(1);
   }
+}
+main .jumbotron {
+  padding: 0 5%;
+  margin-top: 40px;
+}
+main .jumbotron .carousel {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+main .jumbotron .carousel .description {
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  width: 40%;
+  height: 501px;
+}
+main .jumbotron .carousel .description .jumboTitle {
+  font-size: 75px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+main .jumbotron .carousel .description .jumboTitle i {
+  font-family: "Crimson-Text", serif;
+  font-weight: 700;
+}
+main .jumbotron .carousel .description .jumboPar {
+  margin-top: 50px;
+  font-size: 30px;
+  position: absolute;
+  top: 150px;
+}
+main .jumbotron .carousel .description .jumboButton {
+  position: absolute;
+  top: 330px;
+  font-size: 20px;
+  border: 3px solid #E1C0B0;
+  padding: 5%;
+  border-radius: 3px;
+}
+main .jumbotron .carousel .description .jumboButton a {
+  color: black;
+  text-decoration: none;
+}
+main .jumbotron .carousel .description .jumboButton:hover {
+  background-color: #E1C0B0;
+}
+main .jumbotron .carousel .description .jumboButton:hover a {
+  color: white;
+}
+main .jumbotron .carousel .png {
+  width: 0;
+  height: 501px;
+  position: relative;
+  top: 0;
+  right: 70px;
+}
+main .jumbotron .carousel .png img:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 700px;
+}
+main .jumbotron .carousel .png img:nth-child(2) {
+  position: absolute;
+  bottom: 42px;
+  left: 600px;
+}
+main .jumbotron .carousel .png img:nth-child(3) {
+  position: absolute;
+  top: 180px;
+  left: 580px;
+}
+main .jumbotron .carousel .png img:nth-child(4) {
+  position: absolute;
+  top: 59px;
+  left: 1200px;
+}
+main .jumbotron .carousel .png img:nth-child(5) {
+  position: absolute;
+  top: 50px;
+  left: 1230px;
+}
+main .jumbotron .carousel .png img:nth-child(6) {
+  position: absolute;
+  top: 150px;
+  left: 1300px;
+}
+main .jumbotron .carousel .png img:nth-child(7) {
+  position: absolute;
+  bottom: 42px;
+  left: 700px;
+}
+main .jumbotron .carousel .png img:nth-child(8) {
+  position: absolute;
+  bottom: 42px;
+  left: 1200px;
+}
+main .jumbotron .carousel .png img:nth-child(9) {
+  position: absolute;
+  bottom: 42px;
+  left: 1300px;
+}
+main .jumbotron .carousel .png img:nth-child(10) {
+  position: absolute;
+  bottom: 42px;
+  left: 1250px;
+}
+
+footer {
+  height: 181px;
+  background-color: #C0E1CF;
+}
+footer .container-fluid {
+  width: 100%;
+  padding: 2% 10%;
+}
+footer .container-fluid .row ul {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style-type: none;
+}
+footer .container-fluid .row ul li {
+  width: 20%;
+  height: 32px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container-fluid .row ul .socials {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
 }
